@@ -11,6 +11,6 @@ namespace StockManagement.Data.Entities
     {
         public virtual Account Account { get; set; }
 
-        public virtual Stock Stock { get; set; }
+        public virtual StockLog StockLog { get; set; }
     }
 }

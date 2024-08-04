@@ -13,6 +13,5 @@ namespace StockManagement.API.Data
         public DbSet<AccountModel> Accounts { get; set; }
         public DbSet<IndividualTransactionsModel> IndividualTransactions { get; set; }
         public DbSet<StockLogModel> StockLog { get; set; }
-        public DbSet<StockModel> Stocks { get; set; }
     }
 }

@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\StockManagement.API.Data.csproj" />
+    <ProjectReference Include="..\ConsoleApp1\StockManagement.API.Data.csproj" /> 
   </ItemGroup>
 
 </Project>

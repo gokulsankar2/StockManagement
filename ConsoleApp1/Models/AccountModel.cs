@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,11 +14,10 @@ namespace StockManagement.API.Data.Models
         public long AccountID { get; set; }
 
         public long IndividualID { get; set; }
-        
+
+        [Precision(10, 2)]
         public decimal AccountBalance { get; set; }
 
         public DateOnly DateCreated { get; set; }
-
-        public List<StockModel> StockPortfolio { get; set; }
     }
 }

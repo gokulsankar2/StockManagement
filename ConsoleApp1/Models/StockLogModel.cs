@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace StockManagement.API.Data.Models
 
         public string Name { get; set; }
 
-        public decimal Price { get; set; }
+        [Precision(10, 2)]
+        public decimal Price { get; set; } = new decimal(0, 0, 0, false, 2);
 
         public string Code { get; set; }
 

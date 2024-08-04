@@ -1,4 +1,5 @@
-﻿using StockManagement.API.Data.Enum;
+﻿using Microsoft.EntityFrameworkCore;
+using StockManagement.API.Data.Enum;
 using System.ComponentModel.DataAnnotations;
 
 namespace StockManagement.API.Data.Models
@@ -10,10 +11,11 @@ namespace StockManagement.API.Data.Models
 
         public long AccountID { get; set; }
 
-        public long StockID { get; set; }
+        public long StockLogID { get; set; }
 
         public TransactionType TransactionType { get; set; }
 
+        [Precision(10, 2)]
         public decimal TransactionAmount { get; set; }
 
         public DateOnly TransactionDate { get; set; }
