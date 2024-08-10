@@ -15,9 +15,6 @@ namespace StockManagement.API.Data.Models
 
         public long IndividualID { get; set; }
 
-        [Precision(10, 2)]
-        public decimal AccountBalance { get; set; }
-
         public DateOnly DateCreated { get; set; }
     }
 }
